@@ -1,19 +1,20 @@
 pipeline {
     agent any
     stages{
-        stage('clone')
+        stage ('clone'){
         steps{
             checkout scm 
         }
     }
-    stage('bulid'){
+    stage ('bulid'){
         steps{
           echo 'wow!'  
         }
     }
-    stage('Deploy'){
+    stage ('Deploy'){
         steps{
             echo 'The End!'
         }
     }
+}
 }
