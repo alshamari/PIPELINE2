@@ -13,7 +13,8 @@ pipeline {
     }
     stage ('Deploy'){
         steps{
-            sh "mvn package"
+            //sh "mvn package"
+            sh "python MyName"
         }
     }
 }
