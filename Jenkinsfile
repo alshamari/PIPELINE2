@@ -8,12 +8,12 @@ pipeline {
     }
     stage ('bulid'){
         steps{
-          echo 'wow!'  
+          sh "mvn clean"  
         }
     }
     stage ('Deploy'){
         steps{
-            echo 'The End!'
+            sh "mvn package"
         }
     }
 }
