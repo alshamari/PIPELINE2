@@ -8,7 +8,7 @@ pipeline {
     }
     stage ('bulid'){
         steps{
-          sh "mvn clean"  
+         echo "Hello World"  
         }
     }
     stage ('Deploy'){
