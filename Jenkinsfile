@@ -8,14 +8,10 @@ pipeline {
     }
     stage ('bulid'){
         steps{
-         echo "Hello World"  
+
+        sh "docker build ."   
         }
     }
-    stage ('Deploy'){
-        steps{
-            //sh "mvn package"
-            sh "python MyName"
-        }
-    }
+    
 }
 }
